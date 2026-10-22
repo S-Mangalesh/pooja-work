@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>budget web</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="head">
@@ -13,40 +13,36 @@
             <nav>
                 <ul>
                     <li style="background-color: aquamarine;">Dashboard</li>
-                    <li>Transaction</li>
-                    <li>Budget</li>
+                    <li style="background-color: white;">Transaction</li>
+                    <li style="background-color: white;">Budget</li>
                 </ul>
             </nav>
         </div>
     </div>
     <div class="space">
         <div class="title">
-            <h2 style="color: rgba(50, 50, 109, 0.705);padding: 10px;padding-left: 15px;" >Good Morning, Kabilan!</h2>
+            <h2 style="color: rgba(50, 50, 109, 0.705);padding: 10px;padding-left: 15px;" >Good Morning, Mangalesh!</h2>
         </div>
         <div class="totalinfo">
             <div class="totalspend">
-                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/wallet.png" alt="wallet" id="image" style="background-color: rgba(28, 213, 28, 0.78);"/>
                 <div class="infocontent">
                     <p><b>total Spent</b></p>
                     <span id="totalspendcount">0</span>
                 </div>
             </div> 
             <div class="totalexpense">
-                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/document--v1.png" alt="document--v1" id="image" style="background-color: rgba(35, 35, 207, 0.654);"/>
                 <div class="infocontent">
                     <p><b>Total expenses</b></p>
                     <span id="totalexpensecount">0</span>
                 </div>
             </div>
             <div class="highestexpense">
-                <img width="50" height="50" src="https://img.icons8.com/windows/32/increase-profits.png" alt="increase-profits" id="image" style="background-color: rgba(231, 82, 56, 0.822);"/>
                 <div class="infocontent">
                     <p><b>highest Expenses</b></p>
                     <span id="highestexpensecount">0</span>
                 </div>
             </div>
             <div class="remainingbudget">
-                <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/wallet.png" alt="wallet" id="image" style="background-color: rgb(97, 198, 232);"/>
                 <div class="infocontent">
                     <p><b>remaining Budget</b></p>
                     <span id="remainingbudgetcount">0</span>
@@ -70,7 +66,7 @@
                 </select><br><br>
                 <label>Date</label><br>
                 <input type="date" id="inputdate"><br><br>
-                <button id="addexpensebutton" onclick="addexpense()">Add Expenses</button>
+                <button id="addexpensebutton">Add Expenses</button>
             </div>
             <div class="spendingcaegory" style="grid-area: box2;">
                 <h4 id="spendingcategory">Spending by Category</h4>
@@ -85,11 +81,10 @@
                 <p style="padding-bottom: 10px;">Set your monthly Budget</p>
                 <input type="tel" id="inputbudget">
                 <button onclick="alert('Budget Setted!')">Set</button><br><br>
-                <input type="range" >
             </div>
             <div></div>
             <div class="transactions" style="grid-area: box5;">
-                <h4 style="padding: 10px;">Transactions <input type="text" placeholder="Search by name" id="transactionsearch"></h4>
+                <h4 style="padding: 10px;">Transactions </h4>
                 <div>
                     <table class="tablehead">
                         <tr>
@@ -100,27 +95,11 @@
                             <th>Date</th>
                             <th>Actions</th>
                         </tr>
-                        <tbody id="transactionList"></tbody>
+                        
                     </table>
                 </div>
             </div>
-            <div class="filters" style="grid-area: box6;">
-                <h4>Filter & Search</h4><br>
-                <label>Search(by name)</label><br>
-                <input type="text" id="filterinput"><br><br>
-                <label>Category</label><br>
-                <select id="filtercatinput" required>
-                   <option>Food</option>
-                   <option>Travel</option>
-                   <option>Shopping</option>
-                   <option>Education</option>
-                   <option>Others</option>
-                </select><br><br>
-                <button id="filterbutton" onclick="search()">Filter</button>
-                <div id="searchresult"></div>
-            </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
